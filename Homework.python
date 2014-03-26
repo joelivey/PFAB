@@ -1,0 +1,24 @@
+#!/usr/bin/env python
+import math
+first = "Joel"
+last = "Ivey"
+age = 70
+print first + " " + last + " " + str(age)
+print
+sideA = 12.55
+sideB = 17.85
+sideC = math.sqrt((sideA*sideA)+(sideB*sideB))
+print "length of side C = " + str(sideC)
+print
+operand1 = 95
+operand2 = 64.5
+string1 = str(operand1)
+string2 = str(operand2)
+print string1 + " + " + string2 + " = " + str(operand1 + operand2)
+print string1 + " - " + string2 + " = " + str(operand1 - operand2)
+print string1 + " * " + string2 + " = " + str(operand1 * operand2)
+print string1 + " / " + string2 + " = " + str(operand1 / operand2)
+print string1 + " % " + string2 + " = " + str(operand1 % operand2)
+
+# If the value of operand1 or operand2 would change, the rest of the
+# program would still function correctly
