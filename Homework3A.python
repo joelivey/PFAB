@@ -1,0 +1,27 @@
+#!/usr/bin/env python
+
+# Homework3A.python - homework assignment A for third class of PFAB
+#                     joel ivey  (jivey@jiveysoft.com)
+
+Bradys = ["Mike", "Carol", "Marsha", "Jan", "Cindy", "Greg", "Peter", "Bobby", "Alice"]
+
+print "Length of Bradys list = " + str(len(Bradys))
+
+numBradys = len(Bradys)
+count = 0
+print "List of Bradys:"
+while count < numBradys:
+    print "  "+Bradys[count]
+    count = count + 1
+
+# sorted
+print
+print "Bradys sorted alphabetically:"
+for name in sorted(Bradys):
+  print "  " + name
+
+#For...In Loop
+print
+print "list generated with a For...In loop"
+for item in Bradys:
+    print "This is: " + item
