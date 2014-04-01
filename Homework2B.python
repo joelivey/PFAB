@@ -1,0 +1,11 @@
+#!/usr/bin/env python
+
+# Homework2B
+# Joel Ivey (jivey@jiveysoft.com)
+
+# prompt user for price of item and sales tax, then calculate total cost of item
+price = input("What is the cost of the item: ")
+taxRate = input("What is the sales tax rate (expressed as 0.XX): ")
+cost = price * (1 + taxRate)
+print "The full price of the item is " + str(cost)
+
