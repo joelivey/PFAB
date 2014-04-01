@@ -1,0 +1,31 @@
+#!/usr/bin/env python
+
+# Homework2A
+# Joel Ivey (jivey@jiveysoft.com)
+
+import sys
+
+# accept series of scores from command line and print mean value
+sum = 0
+count = len(sys.argv)
+i = 1
+while (i < count):
+  sum = sum + int(sys.argv[i])
+  i = i + 1
+mean = sum / (count - 1)
+print "The average score is " + str(mean)
+
+# determine letter score based on mean
+if mean >= 90:
+	grade = "A"
+elif mean >= 80:
+  grade = "B"
+elif mean >= 70:
+  grade = "C"
+elif mean >= 60:
+	grade = "D"
+elif mean >= 50:
+  grade = "F"
+else:
+  grade ="You are below all the grades!"
+print "Letter grade: " + grade
