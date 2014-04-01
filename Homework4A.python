@@ -1,0 +1,36 @@
+#!/usr/bin/env python
+
+# Homework4A.python - homework assignment A for fourth class of PFAB
+#                     joel ivey  (jivey@jiveysoft.com)
+
+class Animal:
+	def __init__(self, name, species, color, weight, length, numberOfLegs=4, presenceOfFur="True"):
+		self.name = name
+		self.species = species
+		self.color = color
+		self.weight = weight
+		self.length = length
+		self.numberOfLegs = numberOfLegs
+		self.presenceOfFur = presenceOfFur
+
+	def sleep(self):
+		print self.name , " the ", self.species, " is sleeping."
+		
+	def breathe(self):
+		print self.name , " the ", self.species, " is breathing."
+	
+	def walk(self):
+		print self.name , " the ", self.species, " is walking."
+		
+#Create instance of Animal as Dog
+Dog = Animal("Roofus", "canine", "brown", 24, 36)
+
+#Create instance of Animal as Cat
+Cat = Animal("Mischief", "feline", "grey", 7, 27)
+
+#Check if Dog is walking
+Dog.walk()
+
+#Check if Cat is sleeping and breathing
+Cat.sleep()
+Cat.breathe()
